@@ -34,6 +34,11 @@
   flex-wrap: nowrap;
 }
 
+.category-card .btn-primary {
+  background: #393939;
+  border: none;
+}
+
 .category-card {
   flex: 0 0 calc(100% / 3 - 20px);
   margin-right: 20px;
@@ -116,4 +121,92 @@
 
 .video-card:hover img {
   transform: scale(1.05);
+}
+
+
+/* Exhibition Section */
+#exhibitionTabs {
+  border-bottom: 2px solid #ddd;
+}
+
+#exhibitionTabs .nav-link {
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 8px 8px 0 0;
+  color: #555;
+  transition: all 0.3s ease;
+}
+
+#exhibitionTabs .nav-link.active {
+  background-color: #0c0c0c;
+  color: #fff;
+  border: none;
+  box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.15);
+}
+
+#exhibitionTabs .nav-link:hover {
+  color: #0d6efd;
+}
+
+/* Exhibition Cards */
+#exhibitionTabsContent .card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#exhibitionTabsContent .card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+#exhibitionTabsContent .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+#exhibitionTabsContent .card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+#exhibitionTabsContent .card-text {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Buttons inside cards */
+#exhibitionTabsContent .btn {
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+#exhibitionTabsContent .btn-primary {
+  background: #393939;
+  border: none;
+}
+
+#exhibitionTabsContent .btn-outline-secondary {
+  border: 1px solid #888;
+  color: #555;
+}
+
+#exhibitionTabsContent .btn-outline-secondary:hover {
+  background: #555;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #exhibitionTabs .nav-link {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+  }
+
+  #exhibitionTabsContent .card img {
+    height: 180px;
+  }
 }
